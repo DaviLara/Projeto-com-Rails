@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @fruty_pebble %>
+
+<div>
+  <%= link_to "Edit this fruty pebble", edit_fruty_pebble_path(@fruty_pebble) %> |
+  <%= link_to "Back to fruty pebbles", fruty_pebbles_path %>
+
+  <%= button_to "Destroy this fruty pebble", @fruty_pebble, method: :delete %>
+</div>

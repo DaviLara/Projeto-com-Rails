@@ -1,0 +1,12 @@
+<% content_for :title, "Editing cocoapuff" %>
+
+<h1>Editing cocoapuff</h1>
+
+<%= render "form", cocoapuff: @cocoapuff %>
+
+<br>
+
+<div>
+  <%= link_to "Show this cocoapuff", @cocoapuff %> |
+  <%= link_to "Back to cocoapuffs", cocoapuffs_path %>
+</div>

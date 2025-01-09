@@ -1,0 +1,30 @@
+<%= form_with(model: cocoapuff) do |form| %>
+  <% if cocoapuff.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cocoapuff.errors.count, "error") %> prohibited this cocoapuff from being saved:</h2>
+
+      <ul>
+        <% cocoapuff.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form-cocoa">
+  
+    <div>
+      <%= form.text_field :name, placeholder: "Cocoa Puff Name" %>
+      <%= form.submit "Adicionar Cocoa Puff", class: "btn btn-primary" %>
+    </div>
+    <br>  
+
+    <div>
+      
+      <%= form.hidden_field :is_checked, value: "1" %>
+    </div>
+
+      
+
+      <!--<%= form.submit %>-->
+  </div>
+<% end %>

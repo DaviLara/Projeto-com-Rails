@@ -1,0 +1,12 @@
+<% content_for :title, "Editing fruty pebble" %>
+
+<h1>Editing fruty pebble</h1>
+
+<%= render "form", fruty_pebble: @fruty_pebble %>
+
+<br>
+
+<div>
+  <%= link_to "Show this fruty pebble", @fruty_pebble %> |
+  <%= link_to "Back to fruty pebbles", fruty_pebbles_path %>
+</div>

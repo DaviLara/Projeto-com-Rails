@@ -1,0 +1,19 @@
+<%= form_with(model: [@cocoapuff, @fruty_pebble], local: true) do |form| %>
+<div class="box-modal">
+  <div class="modal">
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    <br>
+    <div>
+      <%= form.label :pebble_count %>
+      <%= form.number_field :pebble_count, min: 0, max: 9 %>
+    </div>
+    <br>
+    <div>
+      <%= form.submit "Create Fruty Pebble", class: "btn"%>
+    </div>
+  </div>
+</div>
+<% end %>

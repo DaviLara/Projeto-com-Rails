@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Fruty pebbles" %>
+
+<h1>Fruty pebbles</h1>
+
+<div id="fruty_pebbles">
+  <% @fruty_pebbles.each do |fruty_pebble| %>
+    <%= render fruty_pebble %>
+    <p>
+      <%= link_to "Show this fruty pebble", fruty_pebble %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fruty pebble", new_fruty_pebble_path %>
